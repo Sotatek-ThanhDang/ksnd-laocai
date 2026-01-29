@@ -8,10 +8,10 @@ export default function Home() {
   return (
     <HomeContextProvider>
       <Grid container width="100%" height="100%">
-        <Grid size={4} height="100vh">
+        <Grid size={3.5} height="100vh">
           <LeftPanel />
         </Grid>
-        <Grid size={8} height="100vh">
+        <Grid size={8.5} height="100vh">
           <MapPanel />
         </Grid>
       </Grid>

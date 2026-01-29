@@ -12,7 +12,7 @@ const wardColumns: TypedGridColDef<Ward>[] = [
   {
     field: 'order',
     headerName: 'TT',
-    width: 60,
+    width: 50,
   },
   {
     field: 'name',
@@ -24,7 +24,6 @@ const wardColumns: TypedGridColDef<Ward>[] = [
     field: 'previous',
     headerName: 'Phường/Xã trước sáp nhập',
     flex: 2,
-    minWidth: 240,
   },
 ];
 
