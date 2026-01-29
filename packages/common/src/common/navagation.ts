@@ -1,0 +1,3 @@
+export enum LOGOUT_REASON {
+  WITHDRAWAL = 'WITHDRAWAL',
+}

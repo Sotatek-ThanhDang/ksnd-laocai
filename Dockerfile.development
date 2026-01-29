@@ -1,0 +1,28 @@
+FROM node:20-alpine
+
+WORKDIR /app
+
+RUN corepack enable && corepack prepare yarn@1.22.22 --activate
+
+COPY package.json yarn.lock ./
+COPY turbo.json ./
+COPY apps/admin-portal/package.json ./apps/admin-portal/
+COPY apps/map-fe/package.json ./apps/map-fe/
+COPY packages/common/package.json ./packages/common/
+COPY packages/eslint-config/package.json ./packages/eslint-config/
+COPY packages/typescript-config/package.json ./packages/typescript-config/
+
+RUN yarn install --frozen-lockfile
+
+COPY . .
+
+ENV NODE_ENV=production
+
+RUN yarn workspace admin-portal build --mode development && \
+    yarn workspace map-fe build --mode development
+
+RUN npm install -g serve
+
+EXPOSE 8012 8013
+
+CMD ["sh", "-c", "serve -s apps/admin-portal/dist -l 8012 & serve -s apps/map-fe/dist -l 8013 & wait"]

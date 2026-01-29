@@ -1,0 +1,11 @@
+const MAX_RETRY_LOGIN = 3;
+const TIMEOUT_LOGOUT = 1000 * 60 * 15;
+const BOARD_CAST_AUTH_KEY = 'auth_channel';
+const BOARD_CAST_AUTH_MESSAGE = 'logout';
+
+export {
+  BOARD_CAST_AUTH_KEY,
+  BOARD_CAST_AUTH_MESSAGE,
+  MAX_RETRY_LOGIN,
+  TIMEOUT_LOGOUT,
+};

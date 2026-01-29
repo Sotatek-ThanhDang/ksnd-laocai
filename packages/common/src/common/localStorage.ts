@@ -1,0 +1,5 @@
+const LOCAL_STORAGE_NAMES = {
+  LANG: 'LANG',
+};
+
+export { LOCAL_STORAGE_NAMES };
