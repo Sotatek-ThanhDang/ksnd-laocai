@@ -6,6 +6,7 @@ import {
   useHomeDispatchContext,
   useHomeStateContext,
 } from '@/context/HomeContextProvider';
+import laocaiWards from '@/data/laocai_wards.json';
 import type { Ward } from '@/types/home';
 
 const wardColumns: TypedGridColDef<Ward>[] = [
@@ -28,16 +29,17 @@ const wardColumns: TypedGridColDef<Ward>[] = [
 ];
 
 export const LeftPanel = () => {
-  const { data, selectedWard } = useHomeStateContext();
+  const { selectedWard } = useHomeStateContext();
   const { setSelectedWard } = useHomeDispatchContext();
   const [searchText, setSearchText] = useState('');
 
   const filteredRows = useMemo(() => {
     const value = searchText.trim().toLowerCase();
+    const data = laocaiWards as Ward[];
     if (!value) return data;
 
     return data.filter((row) => row.name.toLowerCase().includes(value));
-  }, [searchText, data]);
+  }, [searchText]);
 
   return (
     <Paper

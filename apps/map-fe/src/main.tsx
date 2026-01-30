@@ -1,6 +1,7 @@
 import './index.css';
 import '@/utils/i18n.ts';
 import '@/utils/axios.ts';
+import 'leaflet/dist/leaflet.css';
 
 import CssBaseline from '@mui/material/CssBaseline';
 import { ThemeProvider } from '@mui/material/styles';

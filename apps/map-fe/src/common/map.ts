@@ -3,7 +3,7 @@ const DEFAULT_COORD: [number, number] = [22.087004, 104.3130405];
 
 const DEFAULT_GEOJSON_STYLE = {
   fillOpacity: 0,
-  weight: 5,
+  weight: 3,
 };
 
 const ZOOM_OPTIONS = {

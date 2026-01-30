@@ -1,0 +1,596 @@
+[
+  {
+    "id": "xa3321.977",
+    "order": 1,
+    "name": "A Mú Sung (xã)",
+    "previous": "Xã Nậm Chạc, Xã A Mú Sung"
+  },
+  {
+    "id": "xa3321.847",
+    "order": 2,
+    "name": "Âu Lâu (phường)",
+    "previous": "Phường Hợp Minh, Xã Giới Phiên, Xã Minh Quân, Xã Âu Lâu"
+  },
+  {
+    "id": "xa3321.931",
+    "order": 3,
+    "name": "Bắc Hà (xã)",
+    "previous": "Thị trấn Bắc Hà, Xã Na Hối, Xã Thải Giàng Phố, Xã Bản Phố, Xã Hoàng Thu Phố, Xã Nậm Mòn"
+  },
+  {
+    "id": "xa3321.1002",
+    "order": 4,
+    "name": "Bản Hồ (xã)",
+    "previous": "Xã Thanh Bình (thị xã Sa Pa), Xã Bản Hồ"
+  },
+  {
+    "id": "xa3321.928",
+    "order": 5,
+    "name": "Bản Lầu (xã)",
+    "previous": "Xã Bản Sen, Xã Lùng Vai, Xã Bản Lầu"
+  },
+  {
+    "id": "xa3321.934",
+    "order": 6,
+    "name": "Bản Liền (xã)",
+    "previous": "Xã Nậm Khánh, Xã Bản Liền"
+  },
+  {
+    "id": "xa3321.993",
+    "order": 7,
+    "name": "Bản Xèo (xã)",
+    "previous": "Xã Pa Cheo, Xã Mường Vi, Xã Bản Xèo"
+  },
+  {
+    "id": "xa3321.904",
+    "order": 8,
+    "name": "Bảo Ái (xã)",
+    "previous": "Xã Cảm Ân, Xã Mông Sơn, Xã Tân Nguyên, Xã Bảo Ái"
+  },
+  {
+    "id": "xa3321.954",
+    "order": 9,
+    "name": "Bảo Hà (xã)",
+    "previous": "Xã Kim Sơn, Xã Cam Cọn, Xã Tân An, Xã Tân Thượng, Xã Bảo Hà"
+  },
+  {
+    "id": "xa3321.935",
+    "order": 10,
+    "name": "Bảo Nhai (xã)",
+    "previous": "Xã Nậm Đét, Xã Cốc Ly, Xã Bảo Nhai"
+  },
+  {
+    "id": "xa3321.942",
+    "order": 11,
+    "name": "Bảo Thắng (xã)",
+    "previous": "Thị trấn Phố Lu, Xã Sơn Hà, Xã Sơn Hải, Xã Thái Niên"
+  },
+  {
+    "id": "xa3321.951",
+    "order": 12,
+    "name": "Bảo Yên (xã)",
+    "previous": "Thị trấn Phố Ràng, Xã Yên Sơn, Xã Lương Sơn, Xã Xuân Thượng"
+  },
+  {
+    "id": "xa3321.976",
+    "order": 13,
+    "name": "Bát Xát (xã)",
+    "previous": "Thị trấn Bát Xát, Xã Bản Vược, Xã Bản Qua, Xã Phìn Ngan, Xã Quang Kim"
+  },
+  {
+    "id": "xa3321.907",
+    "order": 14,
+    "name": "Cam Đường (phường)",
+    "previous": "Phường Nam Cường (thành phố Lào Cai), Phường Xuân Tăng, Phường Pom Hán, Phường Bắc Cường, Phường Bắc Lệnh, Phường Bình Minh, Xã Cam Đường"
+  },
+  {
+    "id": "xa3321.903",
+    "order": 15,
+    "name": "Cảm Nhân (xã)",
+    "previous": "Xã Xuân Long, Xã Ngọc Chấn, Xã Cảm Nhân"
+  },
+  {
+    "id": "xa3321.926",
+    "order": 16,
+    "name": "Cao Sơn (xã)",
+    "previous": "Xã Lùng Khấu Nhin, Xã Tả Thàng, Xã La Pan Tẩn, Xã Cao Sơn"
+  },
+  {
+    "id": "xa3321.896",
+    "order": 17,
+    "name": "Cát Thịnh (xã)",
+    "previous": "xã Cát Thịnh (Giữ nguyên, Không sáp nhập)"
+  },
+  {
+    "id": "xa3321.712",
+    "order": 18,
+    "name": "Cầu Thia (phường)",
+    "previous": "Phường Cầu Thia, Xã Thanh Lương, Xã Thạch Lương, Xã Phúc Sơn, Xã Hạnh Sơn"
+  },
+  {
+    "id": "xa3321.897",
+    "order": 19,
+    "name": "Chấn Thịnh (xã)",
+    "previous": "Xã Tân Thịnh (huyện Văn Chấn), Xã Đại Lịch, Xã Chấn Thịnh"
+  },
+  {
+    "id": "xa3321.802",
+    "order": 20,
+    "name": "Châu Quế (xã)",
+    "previous": "Xã Châu Quế Thượng, Xã Châu Quế Hạ"
+  },
+  {
+    "id": "xa3321.842",
+    "order": 21,
+    "name": "Chế Tạo (xã)",
+    "previous": "xã Chế Tạo (Giữ nguyên, Không sáp nhập)"
+  },
+  {
+    "id": "xa3321.961",
+    "order": 22,
+    "name": "Chiềng Ken (xã)",
+    "previous": "Xã Nậm Tha, Xã Chiềng Ken"
+  },
+  {
+    "id": "xa3321.939",
+    "order": 23,
+    "name": "Cốc Lầu (xã)",
+    "previous": "Xã Nậm Lúc, Xã Bản Cái, Xã Cốc Lầu"
+  },
+  {
+    "id": "xa3321.995",
+    "order": 24,
+    "name": "Cốc San (xã)",
+    "previous": "Xã Đồng Tuyển, Xã Tòng Sành, Xã Cốc San"
+  },
+  {
+    "id": "xa3321.992",
+    "order": 25,
+    "name": "Dền Sáng (xã)",
+    "previous": "Xã Dền Thàng, Xã Sàng Ma Sáo, Xã Dền Sáng"
+  },
+  {
+    "id": "xa3321.803",
+    "order": 26,
+    "name": "Đông Cuông (xã)",
+    "previous": "Xã Quang Minh, Xã An Bình, Xã Đông An, Xã Đông Cuông"
+  },
+  {
+    "id": "xa3321.973",
+    "order": 27,
+    "name": "Dương Quỳ (xã)",
+    "previous": "Xã Thẩm Dương, Xã Dương Quỳ"
+  },
+  {
+    "id": "xa3321.893",
+    "order": 28,
+    "name": "Gia Hội (xã)",
+    "previous": "Xã Nậm Búng, Xã Nậm Lành, Xã Gia Hội"
+  },
+  {
+    "id": "xa3321.946",
+    "order": 29,
+    "name": "Gia Phú (xã)",
+    "previous": "Xã Xuân Giao, Xã Thống Nhất, Xã Gia Phú"
+  },
+  {
+    "id": "xa3321.867",
+    "order": 30,
+    "name": "Hạnh Phúc (xã)",
+    "previous": "Thị trấn Trạm Tấu, Xã Bản Công, Xã Hát Lừu, Xã Xà Hồ"
+  },
+  {
+    "id": "xa3321.923",
+    "order": 31,
+    "name": "Hợp Thành (xã)",
+    "previous": "Xã Tả Phời, Xã Hợp Thành"
+  },
+  {
+    "id": "xa3321.849",
+    "order": 32,
+    "name": "Hưng Khánh (xã)",
+    "previous": "Xã Hồng Ca, Xã Hưng Khánh"
+  },
+  {
+    "id": "xa3321.717",
+    "order": 33,
+    "name": "Khánh Hòa (xã)",
+    "previous": "Xã Tô Mậu, Xã An Lạc, Xã Động Quan, Xã Khánh Hòa"
+  },
+  {
+    "id": "xa3321.972",
+    "order": 34,
+    "name": "Khánh Yên (xã)",
+    "previous": "Xã Khánh Yên Trung, Xã Liêm Phú, Xã Khánh Yên Hạ"
+  },
+  {
+    "id": "xa3321.840",
+    "order": 35,
+    "name": "Khao Mang (xã)",
+    "previous": "Xã Hồ Bốn, Xã Khao Mang"
+  },
+  {
+    "id": "xa3321.801",
+    "order": 36,
+    "name": "Lâm Giang (xã)",
+    "previous": "Xã Lang Thíp, Xã Lâm Giang"
+  },
+  {
+    "id": "xa3321.714",
+    "order": 37,
+    "name": "Lâm Thượng (xã)",
+    "previous": "Xã Mai Sơn, Xã Khánh Thiện, Xã Tân Phượng, Xã Lâm Thượng"
+  },
+  {
+    "id": "xa3321.975",
+    "order": 38,
+    "name": "Lào Cai (phường)",
+    "previous": "Phường Duyên Hải, Phường Cốc Lếu, Phường Kim Tân, Phường Lào Cai, Xã Vạn Hòa, Xã Bản Phiệt"
+  },
+  {
+    "id": "xa3321.841",
+    "order": 39,
+    "name": "Lao Chải (xã)",
+    "previous": "xã Lao Chải (Giữ nguyên, Không sáp nhập)"
+  },
+  {
+    "id": "xa3321.889",
+    "order": 40,
+    "name": "Liên Sơn (xã)",
+    "previous": "Thị trấn Nông trường Liên Sơn, Xã Sơn A, Xã Nghĩa Phúc"
+  },
+  {
+    "id": "xa3321.713",
+    "order": 41,
+    "name": "Lục Yên (xã)",
+    "previous": "Thị trấn Yên Thế, Xã Minh Xuân, Xã Yên Thắng, Xã Liễu Đô"
+  },
+  {
+    "id": "xa3321.932",
+    "order": 42,
+    "name": "Lùng Phình (xã)",
+    "previous": "Xã Tả Van Chư, Xã Lùng Phình, Xã Lùng Thẩn"
+  },
+  {
+    "id": "xa3321.846",
+    "order": 43,
+    "name": "Lương Thịnh (xã)",
+    "previous": "Xã Hưng Thịnh, Xã Lương Thịnh"
+  },
+  {
+    "id": "xa3321.756",
+    "order": 44,
+    "name": "Mậu A (xã)",
+    "previous": "Thị trấn Mậu A, Xã Yên Thái, Xã An Thịnh, Xã Mậu Đông, Xã Ngòi A"
+  },
+  {
+    "id": "xa3321.974",
+    "order": 45,
+    "name": "Minh Lương (xã)",
+    "previous": "Xã Nậm Xây, Xã Minh Lương"
+  },
+  {
+    "id": "xa3321.837",
+    "order": 46,
+    "name": "Mỏ Vàng (xã)",
+    "previous": "Xã An Lương, Xã Mỏ Vàng"
+  },
+  {
+    "id": "xa3321.838",
+    "order": 47,
+    "name": "Mù Cang Chải (xã)",
+    "previous": "Thị trấn Mù Cang Chải, Xã Kim Nọi, Xã Mồ Dề, Xã Chế Cu Nha"
+  },
+  {
+    "id": "xa3321.956",
+    "order": 48,
+    "name": "Mường Bo (xã)",
+    "previous": "Xã Liên Minh, Xã Mường Bo"
+  },
+  {
+    "id": "xa3321.994",
+    "order": 49,
+    "name": "Mường Hum (xã)",
+    "previous": "Xã Nậm Pung, Xã Trung Lèng Hồ, Xã Mường Hum"
+  },
+  {
+    "id": "xa3321.925",
+    "order": 50,
+    "name": "Mường Khương (xã)",
+    "previous": "Thị trấn Mường Khương, Xã Thanh Bình (huyện Mường Khương), Xã Nậm Chảy, Xã Tung Chung Phố, Xã Nấm Lư"
+  },
+  {
+    "id": "xa3321.715",
+    "order": 51,
+    "name": "Mường Lai (xã)",
+    "previous": "Xã An Phú, Xã Vĩnh Lạc, Xã Minh Tiến, Xã Mường Lai"
+  },
+  {
+    "id": "xa3321.959",
+    "order": 52,
+    "name": "Nậm Chày (xã)",
+    "previous": "Xã Dền Thàng, Xã Nậm Chày"
+  },
+  {
+    "id": "xa3321.839",
+    "order": 53,
+    "name": "Nậm Có (xã)",
+    "previous": "xã Nậm Có (Giữ nguyên, Không sáp nhập)"
+  },
+  {
+    "id": "xa3321.710",
+    "order": 54,
+    "name": "Nam Cường (phường)",
+    "previous": "Phường Nam Cường (thành phố Yên Bái), Xã Minh Bảo, Xã Tuy Lộc, Xã Cường Thịnh"
+  },
+  {
+    "id": "xa3321.960",
+    "order": 55,
+    "name": "Nậm Xé (xã)",
+    "previous": "xã Nậm Xé (Giữ nguyên, Không sáp nhập)"
+  },
+  {
+    "id": "xa3321.948",
+    "order": 56,
+    "name": "Nghĩa Đô (xã)",
+    "previous": "Xã Tân Tiến, Xã Vĩnh Yên, Xã Nghĩa Đô"
+  },
+  {
+    "id": "xa3321.906",
+    "order": 57,
+    "name": "Nghĩa Lộ (phường)",
+    "previous": "Phường Tân An, Phường Pú Trạng, Xã Nghĩa An, Xã Nghĩa Sơn"
+  },
+  {
+    "id": "xa3321.900",
+    "order": 58,
+    "name": "Nghĩa Tâm (xã)",
+    "previous": "Xã Bình Thuận, Xã Minh An, Xã Nghĩa Tâm"
+  },
+  {
+    "id": "xa3321.997",
+    "order": 59,
+    "name": "Ngũ Chỉ Sơn (xã)",
+    "previous": "xã Ngũ Chỉ Sơn (Giữ nguyên, Không sáp nhập)"
+  },
+  {
+    "id": "xa3321.924",
+    "order": 60,
+    "name": "Pha Long (xã)",
+    "previous": "Xã Tả Ngải Chồ, Xã Dìn Chin, Xã Tả Gia Khâu, Xã Pha Long"
+  },
+  {
+    "id": "xa3321.868",
+    "order": 61,
+    "name": "Phình Hồ (xã)",
+    "previous": "Xã Làng Nhì, Xã Bản Mù, Xã Phình Hồ"
+  },
+  {
+    "id": "xa3321.804",
+    "order": 62,
+    "name": "Phong Dụ Hạ (xã)",
+    "previous": "Xã Xuân Tầm, Xã Phong Dụ Hạ"
+  },
+  {
+    "id": "xa3321.806",
+    "order": 63,
+    "name": "Phong Dụ Thượng (xã)",
+    "previous": "xã Phong Dụ Thượng (Giữ nguyên, Không sáp nhập)"
+  },
+  {
+    "id": "xa3321.940",
+    "order": 64,
+    "name": "Phong Hải (xã)",
+    "previous": "Thị trấn Nông trường Phong Hải, Xã Bản Cầm"
+  },
+  {
+    "id": "xa3321.955",
+    "order": 65,
+    "name": "Phúc Khánh (xã)",
+    "previous": "Xã Việt Tiến, Xã Phúc Khánh"
+  },
+  {
+    "id": "xa3321.755",
+    "order": 66,
+    "name": "Phúc Lợi (xã)",
+    "previous": "Xã Trúc Lâu, Xã Trung Tâm, Xã Phúc Lợi"
+  },
+  {
+    "id": "xa3321.843",
+    "order": 67,
+    "name": "Púng Luông (xã)",
+    "previous": "Xã Nậm Khắt, Xã La Pán Tẩn, Xã Dế Xu Phình, Xã Púng Luông"
+  },
+  {
+    "id": "xa3321.845",
+    "order": 68,
+    "name": "Quy Mông (xã)",
+    "previous": "Xã Kiên Thành, Xã Y Can, Xã Quy Mông"
+  },
+  {
+    "id": "xa3321.996",
+    "order": 69,
+    "name": "Sa Pa (phường)",
+    "previous": "Phường Hàm Rồng, Phường Ô Quý Hồ, Phường Sa Pả, Phường Cầu Mây, Phường Phan Si Păng, Phường Sa Pa"
+  },
+  {
+    "id": "xa3321.929",
+    "order": 70,
+    "name": "Si Ma Cai (xã)",
+    "previous": "Thị trấn Si Ma Cai, Xã Sán Chải, Xã Nàn Sán, Xã Cán Cấu, Xã Quan Hồ Thẩn"
+  },
+  {
+    "id": "xa3321.930",
+    "order": 71,
+    "name": "Sín Chéng (xã)",
+    "previous": "Xã Bản Mế, Xã Thào Chư Phìn, Xã Nàn Sín, Xã Sín Chéng"
+  },
+  {
+    "id": "xa3321.894",
+    "order": 72,
+    "name": "Sơn Lương (xã)",
+    "previous": "Xã Nậm Mười, Xã Sùng Đô, Xã Suối Quyền, Xã Sơn Lương"
+  },
+  {
+    "id": "xa3321.933",
+    "order": 73,
+    "name": "Tả Củ Tỷ (xã)",
+    "previous": "Xã Lùng Cải, Xã Tả Củ Tỷ"
+  },
+  {
+    "id": "xa3321.998",
+    "order": 74,
+    "name": "Tả Phìn (xã)",
+    "previous": "Xã Trung Chải, Xã Tả Phìn"
+  },
+  {
+    "id": "xa3321.999",
+    "order": 75,
+    "name": "Tả Van (xã)",
+    "previous": "Xã Hoàng Liên, Xã Mường Hoa, Xã Tả Van"
+  },
+  {
+    "id": "xa3321.888",
+    "order": 76,
+    "name": "Tà Xi Láng (xã)",
+    "previous": "xã Tà Xi Láng (Giữ nguyên, Không sáp nhập)"
+  },
+  {
+    "id": "xa3321.805",
+    "order": 77,
+    "name": "Tân Hợp (xã)",
+    "previous": "Xã Đại Sơn, Xã Nà Hầu, Xã Tân Hợp"
+  },
+  {
+    "id": "xa3321.716",
+    "order": 78,
+    "name": "Tân Lĩnh (xã)",
+    "previous": "Xã Minh Chuẩn, Xã Tân Lập, Xã Phan Thanh, Xã Khai Trung, Xã Tân Lĩnh"
+  },
+  {
+    "id": "xa3321.943",
+    "order": 79,
+    "name": "Tằng Loỏng (xã)",
+    "previous": "Thị trấn Tằng Loỏng, Xã Phú Nhuận"
+  },
+  {
+    "id": "xa3321.902",
+    "order": 80,
+    "name": "Thác Bà (xã)",
+    "previous": "Thị trấn Thác Bà, Xã Vũ Linh, Xã Bạch Hà, Xã Hán Đà, Xã Vĩnh Kiên, Xã Đại Minh"
+  },
+  {
+    "id": "xa3321.899",
+    "order": 81,
+    "name": "Thượng Bằng La (xã)",
+    "previous": "Thị trấn Nông trường Trần Phú, Xã Thượng Bằng La"
+  },
+  {
+    "id": "xa3321.950",
+    "order": 82,
+    "name": "Thượng Hà (xã)",
+    "previous": "Xã Điện Quan, Xã Minh Tân, Xã Thượng Hà"
+  },
+  {
+    "id": "xa3321.887",
+    "order": 83,
+    "name": "Trạm Tấu (xã)",
+    "previous": "Xã Pá Lau, Xã Pá Hu, Xã Túc Đán, Xã Trạm Tấu"
+  },
+  {
+    "id": "xa3321.844",
+    "order": 84,
+    "name": "Trấn Yên (xã)",
+    "previous": "Thị trấn Cổ Phúc, Xã Báo Đáp, Xã Tân Đồng, Xã Thành Thịnh, Xã Hòa Cuông, Xã Minh Quán"
+  },
+  {
+    "id": "xa3321.990",
+    "order": 85,
+    "name": "Trịnh Tường (xã)",
+    "previous": "Xã Cốc Mỳ, Xã Trịnh Tường"
+  },
+  {
+    "id": "xa3321.711",
+    "order": 86,
+    "name": "Trung Tâm (phường)",
+    "previous": "Phường Trung Tâm, Xã Phù Nham, Xã Nghĩa Lợi, Xã Nghĩa Lộ"
+  },
+  {
+    "id": "xa3321.890",
+    "order": 87,
+    "name": "Tú Lệ (xã)",
+    "previous": "Xã Cao Phạ, Xã Tú Lệ"
+  },
+  {
+    "id": "xa3321.957",
+    "order": 88,
+    "name": "Văn Bàn (xã)",
+    "previous": "Thị trấn Khánh Yên, Xã Khánh Yên Thượng, Xã Sơn Thuỷ, Xã Làng Giàng, Xã Hòa Mạc"
+  },
+  {
+    "id": "xa3321.895",
+    "order": 89,
+    "name": "Văn Chấn (xã)",
+    "previous": "Thị trấn Sơn Thịnh, Xã Đồng Khê, Xã Suối Bu, Xã Suối Giàng"
+  },
+  {
+    "id": "xa3321.848",
+    "order": 90,
+    "name": "Văn Phú (phường)",
+    "previous": "Phường Yên Thịnh, Xã Tân Thịnh (thành phố Yên Bái), Xã Văn Phú, Xã Phú Thịnh"
+  },
+  {
+    "id": "xa3321.866",
+    "order": 91,
+    "name": "Việt Hồng (xã)",
+    "previous": "Xã Việt Cường, Xã Vân Hội, Xã Việt Hồng"
+  },
+  {
+    "id": "xa3321.958",
+    "order": 92,
+    "name": "Võ Lao (xã)",
+    "previous": "Xã Nậm Mả, Xã Nậm Dạng, Xã Võ Lao"
+  },
+  {
+    "id": "xa3321.822",
+    "order": 93,
+    "name": "Xuân Ái (xã)",
+    "previous": "Xã Đại Phác, Xã Yên Phú, Xã Yên Hợp, Xã Viễn Sơn, Xã Xuân Ái"
+  },
+  {
+    "id": "xa3321.949",
+    "order": 94,
+    "name": "Xuân Hòa (xã)",
+    "previous": "Xã Tân Dương, Xã Xuân Hòa"
+  },
+  {
+    "id": "xa3321.947",
+    "order": 95,
+    "name": "Xuân Quang (xã)",
+    "previous": "Xã Phong Niên, Xã Trì Quang, Xã Xuân Quang"
+  },
+  {
+    "id": "xa3321.991",
+    "order": 96,
+    "name": "Y Tý (xã)",
+    "previous": "Xã A Lù, Xã Y Tý"
+  },
+  {
+    "id": "xa3321.709",
+    "order": 97,
+    "name": "Yên Bái (phường)",
+    "previous": "Phường Đồng Tâm, Phường Yên Ninh, Phường Minh Tân, Phường Nguyễn Thái Học, Phường Hồng Hà"
+  },
+  {
+    "id": "xa3321.901",
+    "order": 98,
+    "name": "Yên Bình (xã)",
+    "previous": "Thị trấn Yên Bình, Xã Tân Hương, Xã Thịnh Hưng, Xã Đại Đồng"
+  },
+  {
+    "id": "xa3321.905",
+    "order": 99,
+    "name": "Yên Thành (xã)",
+    "previous": "Xã Phúc Ninh, Xã Mỹ Gia, Xã Xuân Lai, Xã Phúc An, Xã Yên Thành"
+  }
+]

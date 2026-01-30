@@ -1,18 +1,23 @@
 /* eslint-disable react-refresh/only-export-components */
+import L from 'leaflet';
 import React, {
   createContext,
   type Dispatch,
   type SetStateAction,
   useContext,
+  useEffect,
   useMemo,
   useState,
 } from 'react';
 
+import { DEFAULT_COORD, ZOOM_OPTIONS } from '@/common/map';
+import laocaiWards from '@/data/geojson/laocai/ward';
 import type { Ward } from '@/types/home';
+
+import { useMapContext } from './MapContextProvider';
 
 type HomeContextState = {
   selectedWard: Ward | undefined;
-  data: Ward[];
 };
 type HomeContextDispatch = {
   setSelectedWard: Dispatch<SetStateAction<Ward | undefined>>;
@@ -23,42 +28,39 @@ const HomeDispatchContext = createContext<HomeContextDispatch | undefined>(
   undefined
 );
 
-const WARD_ROWS: Ward[] = [
-  {
-    id: 'xa3321.977',
-    order: 1,
-    name: 'A Mú Sung (xã)',
-    previous: 'Xã Nậm Chạc, Xã A Mú Sung',
-  },
-  {
-    id: 'xa3321.847',
-    order: 2,
-    name: 'Âu Lâu (phường)',
-    previous: 'Phường Hợp Minh, Xã Giới Phiên, Xã Minh Quân, Xã Âu Lâu',
-  },
-  {
-    id: 'xa3321.931',
-    order: 3,
-    name: 'Bắc Hà (xã)',
-    previous:
-      'Thị trấn Bắc Hà, Xã Na Hối, Xã Thải Giàng Phố, Xã Bản Phố, Xã Hoàng Thu Phố, Xã Nậm Mòn',
-  },
-];
-
 export const HomeContextProvider: React.FC<{ children: React.ReactNode }> = ({
   children,
 }) => {
+  const { mapRef } = useMapContext();
   const [selectedWard, setSelectedWard] = useState<Ward | undefined>();
 
-  const contextState = useMemo(
-    () => ({ selectedWard, data: WARD_ROWS }),
-    [selectedWard]
-  );
+  const contextState = useMemo(() => ({ selectedWard }), [selectedWard]);
 
   const contextDispatch = useMemo(
     () => ({ setSelectedWard }),
     [setSelectedWard]
   );
+
+  useEffect(() => {
+    const selectedWardId = selectedWard?.id;
+    if (!mapRef.current) return;
+
+    if (!selectedWardId) {
+      mapRef.current.flyTo(DEFAULT_COORD, ZOOM_OPTIONS.DEFAULT);
+    }
+
+    const selected = laocaiWards.find(
+      (item) => item.features[0].id === selectedWardId
+    );
+
+    if (!selected) return;
+
+    const geoJsonLayer = L.geoJSON(selected as any);
+    const center = geoJsonLayer.getBounds().getCenter();
+
+    mapRef.current.flyTo(center, ZOOM_OPTIONS.FOCUS);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [selectedWard?.id]);
 
   return (
     <HomeStateContext.Provider value={contextState}>

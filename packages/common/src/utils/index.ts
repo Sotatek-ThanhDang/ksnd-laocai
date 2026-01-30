@@ -4,6 +4,7 @@ export * from './delay';
 export * from './formatDateTime';
 export * from './formatNumber';
 export * from './formatText';
+export * from './getRandomColor';
 export * from './handleErrorMessage';
 export * from './lodash';
 export * from './mapperProfileSection';
