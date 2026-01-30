@@ -1,40 +1,55 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 import { alpha } from '@mui/material';
 import { getRandomColor, yellow } from '@repo/common';
-import { useCallback } from 'react';
-import { GeoJSON, MapContainer as BaseMap, TileLayer } from 'react-leaflet';
+import { memo, type ReactNode, useCallback } from 'react';
+import { GeoJSON, MapContainer as LeafeatMap, TileLayer } from 'react-leaflet';
 
 import {
   DEFAULT_COORD,
   DEFAULT_GEOJSON_STYLE,
+  SELECTED_GEOJSON_STYLE,
   ZOOM_OPTIONS,
 } from '@/common/map';
-import { useHomeDispatchContext } from '@/context/HomeContextProvider';
+import {
+  useHomeDispatchContext,
+  useHomeStateContext,
+} from '@/context/HomeContextProvider';
 import { useMapContext } from '@/context/MapContextProvider';
 import laocaiProvince from '@/data/geojson/laocai/provice.json';
 import laocaiGeoJSONWards from '@/data/geojson/laocai/ward';
 import laocaiWards from '@/data/laocai_wards.json';
 
 export function MapContainer() {
-  const { mapRef } = useMapContext();
-
+  const { selectedWard } = useHomeStateContext();
   const { setSelectedWard } = useHomeDispatchContext();
 
   const onEachFeatureWard = useCallback(
     (feature: any, layer: any) => {
-      layer.setStyle({
-        ...DEFAULT_GEOJSON_STYLE,
-        color: alpha(getRandomColor(), Math.max(0.4, Math.random())),
-      });
+      let selectedId: string | undefined;
+      const id = feature?.id;
 
       layer.on({
         mouseover: (e: any) => {
           const l = e.target;
-          l.setStyle({ ...DEFAULT_GEOJSON_STYLE, fillOpacity: 0.5 });
+
+          l.setStyle({
+            ...DEFAULT_GEOJSON_STYLE,
+            fillOpacity: SELECTED_GEOJSON_STYLE.fillOpacity - 0.2,
+          });
         },
         mouseout: (e: any) => {
+          setSelectedWard((pre) => {
+            selectedId = pre?.id;
+            return pre;
+          });
+
+          const isSelected = selectedId === id;
           const l = e.target;
-          l.setStyle({ ...DEFAULT_GEOJSON_STYLE });
+
+          const style = isSelected
+            ? SELECTED_GEOJSON_STYLE
+            : DEFAULT_GEOJSON_STYLE;
+
+          l.setStyle({ ...style });
         },
         click: (e: any) => {
           const clickedLayer = e.target;
@@ -45,19 +60,51 @@ export function MapContainer() {
           e.target._map.flyTo(center, ZOOM_OPTIONS.FOCUS);
 
           setSelectedWard((pre) =>
-            pre?.id === feature.id
+            pre?.id === id
               ? undefined
-              : laocaiWards.find((item) => item.id === feature.id)
+              : laocaiWards.find((item) => item.id === id)
           );
         },
       });
     },
-    [setSelectedWard]
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [selectedWard?.id]
   );
 
-  const renderMemorizeMap = useCallback(
-    () => (
-      <BaseMap
+  return (
+    <BaseMap>
+      <GeoJSON
+        data={laocaiProvince as any}
+        style={{
+          ...DEFAULT_GEOJSON_STYLE,
+          color: yellow[300],
+          weight: 3,
+          fillOpacity: 0.2,
+        }}
+      />
+      {laocaiGeoJSONWards.map((ward) => (
+        <GeoJSON
+          key={ward.features[0].id}
+          data={ward as any}
+          onEachFeature={onEachFeatureWard}
+          style={{
+            ...(ward.features[0].id === selectedWard?.id
+              ? SELECTED_GEOJSON_STYLE
+              : DEFAULT_GEOJSON_STYLE),
+            color: alpha(getRandomColor(), Math.max(0.4, Math.random())),
+          }}
+        />
+      ))}
+    </BaseMap>
+  );
+}
+
+const BaseMap = memo(
+  ({ children: extendComponents }: { children: ReactNode }) => {
+    const { mapRef } = useMapContext();
+
+    return (
+      <LeafeatMap
         ref={mapRef}
         center={DEFAULT_COORD}
         zoom={ZOOM_OPTIONS.DEFAULT - 0.25}
@@ -70,25 +117,8 @@ export function MapContainer() {
           maxZoom={18}
           attribution="&copy; Google Maps"
         />
-        <GeoJSON
-          data={laocaiProvince as any}
-          style={{
-            ...DEFAULT_GEOJSON_STYLE,
-            color: yellow[300],
-            fillOpacity: 0.2,
-          }}
-        />
-        {laocaiGeoJSONWards.map((ward) => (
-          <GeoJSON
-            key={ward.features[0].id}
-            data={ward as any}
-            onEachFeature={onEachFeatureWard}
-          />
-        ))}
-      </BaseMap>
-    ),
-    [onEachFeatureWard]
-  );
-
-  return <>{renderMemorizeMap()}</>;
-}
+        {extendComponents}
+      </LeafeatMap>
+    );
+  }
+);
