@@ -24,7 +24,7 @@ export function MapContainer() {
     (feature: any, layer: any) => {
       layer.setStyle({
         ...DEFAULT_GEOJSON_STYLE,
-        color: alpha(getRandomColor(), Math.random()),
+        color: alpha(getRandomColor(), Math.max(0.4, Math.random())),
       });
 
       layer.on({
