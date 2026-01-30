@@ -12,14 +12,14 @@ import type { Ward } from '@/types/home';
 const wardColumns: TypedGridColDef<Ward>[] = [
   {
     field: 'order',
-    headerName: 'TT',
-    width: 50,
+    headerName: 'No',
+    width: 90,
   },
   {
     field: 'name',
     headerName: 'Phường/Xã mới',
     flex: 1,
-    minWidth: 160,
+    minWidth: 150,
   },
   {
     field: 'previous',
